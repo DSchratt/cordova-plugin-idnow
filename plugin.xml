@@ -51,7 +51,7 @@
             </config-file>
             
         <framework src="IDnowSDK" type="podspec" spec="~> 3.17.0" />
-        <pod src="IDnowSDK" type="podspec" spec="~> 3.17.0" fix-bundle-path="idnow-sdk/resources/IDnowSDKLocalization.bundle"/>
+<!--        <pod src="IDnowSDK" type="podspec" spec="~> 3.17.0" fix-bundle-path="idnow-sdk/resources/IDnowSDKLocalization.bundle"/>-->
         <source-file src="src/ios/IDnowPlugin.m" />
     </platform>
 </plugin>
