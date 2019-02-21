@@ -8,7 +8,6 @@
     <js-module name="IDnowPlugin" src="www/IDnowPlugin.js">
         <clobbers target="IDnowPlugin" />
     </js-module>
-    <dependency id="cordova-plugin-cocoapod-support"/>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="IDnowPlugin">
@@ -41,20 +40,20 @@
         </config-file>
 
         <preference name="CAMERA_USAGE_DESCRIPTION" default="This app needs camera access"/>
-            <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-                <string>$CAMERA_USAGE_DESCRIPTION</string>
-            </config-file>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+          <string>$CAMERA_USAGE_DESCRIPTION</string>
+        </config-file>
 
         <preference name="MICROPHONE_USAGE_DESCRIPTION" default="This app needs microphone access"/>
-            <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
-                <string>$MICROPHONE_USAGE_DESCRIPTION</string>
-            </config-file>
+        <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+          <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+        </config-file>
+        
         <preference name="PHOTO_LIBRARY_DESCRIPTION" default="This app needs photo library access"/>
-            <config-file target="NSPhotoLibraryUsageDescription" file="*-Info.plist">
-                <string>This app needs photo library access</string>
-            </config-file>
-        <framework src="IDnowSDK" type="podspec" spec="~> 3.17.0" />
-<!--        <pod src="IDnowSDK" type="podspec" spec="~> 3.17.0" fix-bundle-path="idnow-sdk/resources/IDnowSDKLocalization.bundle"/>-->
+        <config-file target="NSPhotoLibraryUsageDescription" file="*-Info.plist">
+            <string>This app needs photo library access</string>
+        </config-file>
+        <framework src="IDnowSDK" type="podspec" spec="3.11.0" />
         <source-file src="src/ios/IDnowPlugin.m" />
     </platform>
 </plugin>
