@@ -50,7 +50,7 @@
                 <string>$MICROPHONE_USAGE_DESCRIPTION</string>
             </config-file>
             
-        <framework src="IDnowSDK" type="podspec" spec="~> 3.9.0" />
+        <framework src="IDnowSDK" type="podspec" spec="~> 3.17.0" />
         <pod src="IDnowSDK" type="podspec" spec="~> 3.17.0" />
         <source-file src="src/ios/IDnowPlugin.m" />
     </platform>
